@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 namespace Database\Seeders;
 
@@ -25,4 +26,35 @@ class DatabaseSeeder extends Seeder
             PegawaiTrainingSeeder::class,
         ]);
     }
+=======
+namespace Database\Seeders;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+class UserSeeder extends Seeder
+{
+/**
+* Run the database seeds.
+*/
+public function run(): void
+{
+//
+User::create([
+'name' => 'Admin Satu',
+'email' => 'admin1@mail.com',
+'password' => Hash::make('password'),
+]);
+User::create([
+'name' => 'Admin Dua',
+'email' => 'admin2@mail.com',
+'password' => Hash::make('password'),
+]);
+User::create([
+'name' => 'Admin Tiga',
+'email' => 'admin3@mail.com',
+'password' => Hash::make('password'),
+]);
+}
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7
 }

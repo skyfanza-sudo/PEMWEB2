@@ -1,5 +1,11 @@
 <?php
+<<<<<<< HEAD
 namespace App\Filament\Resources\Trainings\Pages;
+=======
+
+namespace App\Filament\Resources\Trainings\Pages;
+
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7
 use App\Filament\Resources\Trainings\TrainingResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
@@ -7,12 +13,17 @@ use Filament\Resources\Pages\EditRecord;
 class EditTraining extends EditRecord
 {
     protected static string $resource = TrainingResource::class;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7
     protected function getHeaderActions(): array
     {
         return [
             DeleteAction::make(),
         ];
     }
+<<<<<<< HEAD
     //-------setelah edit selesai diarahkan ke halaman index--------
     protected function getRedirectUrl(): string
     {
@@ -59,4 +70,6 @@ class EditTraining extends EditRecord
             ->pegawais()
             ->sync($syncData);
     }
+=======
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7
 }

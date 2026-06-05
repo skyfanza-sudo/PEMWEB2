@@ -8,6 +8,7 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateTraining extends CreateRecord
 {
     protected static string $resource = TrainingResource::class;
+<<<<<<< HEAD
     
     //----setelah input selesai diarahkan ke halaman index----
     protected function getRedirectUrl(): string
@@ -35,3 +36,6 @@ class CreateTraining extends CreateRecord
         }
     }
 }
+=======
+}
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7

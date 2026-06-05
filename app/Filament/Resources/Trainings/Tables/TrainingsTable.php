@@ -14,8 +14,12 @@ class TrainingsTable
     {
         return $table
             ->columns([
+<<<<<<< HEAD
                 TextColumn::make('jenisTraining.nama_jenis')
                     ->label('Jenis Training')
+=======
+                TextColumn::make('jenis_training_id')
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7
                     ->numeric()
                     ->sortable(),
                 TextColumn::make('nama_training')
@@ -27,11 +31,14 @@ class TrainingsTable
                     ->sortable(),
                 TextColumn::make('lokasi')
                     ->searchable(),
+<<<<<<< HEAD
                 TextColumn::make('pegawais.nama')
                     ->label('Peserta')
                     ->badge()
                     ->separator(',')
                     ->wrap(),
+=======
+>>>>>>> a24a7b72be52e7b391d93f2cd8d7e1b4ce5d12b7
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
